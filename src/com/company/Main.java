@@ -1,6 +1,6 @@
 package com.company;
 
-import java.sql.SQLOutput;
+import com.devices.Car;
 
 public class Main {
 
@@ -18,7 +18,7 @@ public class Main {
         bmw.color = "czerwone";
         bmw.model = "X5";
         bmw.producer = "BMW";
-        bmw.yearOfProduction = 2020;
+        bmw.yearOfProduction = 2016;
         bmw.value = 100000.0;
 
         //Human1
@@ -109,5 +109,11 @@ public class Main {
 
         //Task 5
         grzesiek.getCar();
+
+        //Task 6
+        System.out.println(audi.equals(bmw));
+        System.out.println(audi);
+        System.out.println(audi.hashCode());
+        System.out.println(audi.toString());
     }
 }
